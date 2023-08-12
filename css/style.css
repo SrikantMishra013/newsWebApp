@@ -49,6 +49,9 @@ li {
     gap: 1.5rem;
     font-size: 1.5em;
 }
+.hover-link:hover{
+    cursor: pointer;
+}
 
 .search-box {
     display: flex;
