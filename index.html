@@ -8,73 +8,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700&display=swap" rel="stylesheet">
 
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        body{
-            background-color: #fdfcfc;
+
+        body {
+
             font-family: 'Baloo Paaji 2', cursive;
         }
-        a{
+
+        a {
             text-decoration: none;
-            color:black;
-        }
-        li{
-            list-style: none;
-        }
-        .flex{
-            display: flex;
-            
+            color: black;
         }
 
-        .container
-        {
+        li {
+            list-style: none;
+        }
+
+        .flex {
+            display: flex;
+
+        }
+
+        .container {
             padding: 0px 80px;
         }
-        .nav-bar
-        {
+
+        .nav-bar {
+            position: fixed;
+            top:0;
+            width: 100%;
             justify-content: space-between;
-            background-color: aquamarine;
-        }
-        .logo .img-logo{
-            max-width: 150px;
+            background-color: #faf9f9;
+            border-bottom: 1px solid #ccc;
+            padding-top: 20px;
             height: 14vh;
+            overflow: hidden;
+            z-index: 99px;
         }
-        .list-item{
+
+        .logo .img-logo {
+            max-width: 150px;
+
+        }
+
+        .list-item {
             gap: 1.5rem;
             font-size: 1.5em;
         }
-        .search-box
-        {
+
+        .search-box {
             display: flex;
             padding: 10px;
             gap: 0.5rem;
             max-height: 50px;
-            
+
         }
-        .search-box input{
+
+        .search-box input {
             font-size: 17px;
+            font-family: 'Baloo Paaji 2', cursive;
             border-radius: 10px;
             max-width: 180px;
-            padding:4px 4px 4px 10px;
-            border:none;
+            padding: 4px 4px 4px 10px;
+            border: none;
             outline: none;
         }
-        .search-box button{
-            padding: 4px;
-            font-size: 17px;
-            border:none;
+
+        .search-box button {
+            font-family: 'Baloo Paaji 2', cursive;
+            padding: 0px 4px;
+            font-size: 16px;
+            border: none;
             border-radius: 10px;
         }
 
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 130px;
+        }
+
+        .card .poster {
+            max-width: 300px;
+            background-color: #ccc;
+        }
     </style>
 </head>
 
 <body>
     <nav class=" nav-bar flex container">
-        <div class="logo"><a href="#"><img class = " img-logo" src="image/newspaper.jpg" alt="image-logo "></a></div>
+        <div class="logo"><a href="#"><img class=" img-logo" src="image/newspaper.jpg" alt="image-logo "></a></div>
         <div>
             <ul class="flex list-item">
                 <li><a href="#">Finance</a></li>
@@ -87,9 +117,22 @@
             <button>Search</button>
         </div>
     </nav>
-    <main class="container">
+    <main class="container cards">
 
     </main>
+
+    <template>
+        <div class="card">
+            <div class="poster">
+                <img src="https://via.placeholder.com/400x200" alt="">
+            </div>
+            <div>
+                <h2>news titile</h2>
+                <p>news description</p>
+            </div>
+        </div>
+    </template>
+
 
 </body>
 
