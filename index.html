@@ -40,10 +40,33 @@
         }
         .logo .img-logo{
             max-width: 150px;
+            height: 14vh;
         }
         .list-item{
             gap: 1.5rem;
             font-size: 1.5em;
+        }
+        .search-box
+        {
+            display: flex;
+            padding: 10px;
+            gap: 0.5rem;
+            max-height: 50px;
+            
+        }
+        .search-box input{
+            font-size: 17px;
+            border-radius: 10px;
+            max-width: 180px;
+            padding:4px 4px 4px 10px;
+            border:none;
+            outline: none;
+        }
+        .search-box button{
+            padding: 4px;
+            font-size: 17px;
+            border:none;
+            border-radius: 10px;
         }
 
     </style>
@@ -59,7 +82,7 @@
                 <li><a href="#">Sports</a></li>
             </ul>
         </div>
-        <div>
+        <div class="search-box">
             <input type="text" name="search" placeholder="e.g. Science">
             <button>Search</button>
         </div>
