@@ -20,7 +20,6 @@ li {
 
 .flex {
     display: flex;
-
 }
 
 .container {
@@ -32,25 +31,27 @@ li {
     top: 0;
     width: 100%;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgb(247, 247, 248);
     border-bottom: 1px solid rgb(233, 230, 230);
-    padding-top: 20px;
-    height: 14vh;
+    padding-top: 10px;
+    height: 75px;
     overflow: hidden;
     z-index: 999;
 }
 
 .logo .img-logo {
     max-width: 150px;
-
+    mix-blend-mode: multiply;
 }
 
 .list-item {
-    gap: 1.5rem;
-    font-size: 1.5em;
+    gap: 0.8rem;
+    font-size: 1.3em;
+    color: #5d4aaa;
 }
 .hover-link:hover{
     cursor: pointer;
+    color: rgb(102, 101, 101);
 }
 
 .search-box {
@@ -64,19 +65,28 @@ li {
 .search-box input {
     font-size: 17px;
     font-family: 'Baloo Paaji 2', cursive;
-    border-radius: 10px;
+    border-radius: 5px;
     max-width: 180px;
     padding: 4px 4px 4px 10px;
-    border: none;
+    border: 1px solid #5d4aaa;
     outline: none;
 }
 
 .search-box button {
     font-family: 'Baloo Paaji 2', cursive;
-    padding: 0px 4px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 17px;
+    border: 1px solid #5d4aaa;
+    border-radius: 6px;
+    color: white;
+    background-color: #5d4aaa;
+}
+.search-box button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #5d4aaa;
+    border: 1px solid #5d4aaa;
+    transition: 0.3s;
 }
 
 .cards {
@@ -91,22 +101,23 @@ li {
 }
 
 .card {
+    min-width: 360px;
     max-width: 360px;
-    background-color: #faf6f6;
-    border-radius: 10px;
+    background-color: #faf6f6a8;
+    border-radius: 8px;
     overflow: hidden;
-    height: 370px;
+    min-height: 370px;
 }
 
 .card .poster img {
     width: 100%;
     height: 180px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .card:hover {
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .details {
